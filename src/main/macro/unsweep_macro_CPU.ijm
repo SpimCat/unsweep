@@ -72,9 +72,9 @@ for (j = 0; j < lengthOf(subfolderlist); j++) {
 		
 				// save corrected image
 				saveAs("Tiff", outputFolder + "/" + filelist[i] + "_corr.tif");
-		 "/"
+		 
 				// make a maximum projection and save it as thumbnail
-		        run("Z Project...", "projection=[Max Intensity]");
+		        	run("Z Project...", "projection=[Max Intensity]");
 				saveAs("Tiff", outputFolder + "/thumbnails/" + filelist[i] + "_corr.tif");
 		
 				// cleanup
